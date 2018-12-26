@@ -16,7 +16,7 @@ class Services extends Component{
               <Grid>
                 <Row>
                     <Col xs={6} md={4}>
-                    <Thumbnail src={require('../../img/person_1.jpg')} alt="242x200">
+                    <Thumbnail src={require('../../img/python.jpg')} alt="242x200">
                         <h3>Thumbnail label</h3>
                         <p>Description</p>
                         <p>
@@ -27,7 +27,7 @@ class Services extends Component{
                     </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
-                    <Thumbnail src={require('../../img/person_1.jpg')} alt="242x200">
+                    <Thumbnail src={require('../../img/go.png')} alt="242x200">
                         <h3>Thumbnail label</h3>
                         <p>Description</p>
                         <p>
@@ -38,7 +38,7 @@ class Services extends Component{
                     </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
-                    <Thumbnail src={require('../../img/person_1.jpg')} alt="242x200">
+                    <Thumbnail src={require('../../img/php.jpg')} alt="242x200">
                         <h3>Thumbnail label</h3>
                         <p>Description</p>
                         <p>
@@ -49,7 +49,7 @@ class Services extends Component{
                     </Thumbnail>
                     </Col>
                 </Row>
-                </Grid>;
+                </Grid>
            </div>
        );
    }

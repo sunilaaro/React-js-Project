@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab,Image,Carousel,Item,Caption } from 'react-bootstrap';
+import { Tabs, Tab,Image,Carousel, Grid, Row,Col,Thumbnail,Button } from 'react-bootstrap';
 import './home.css';
 class Home extends Component {
     render() {
@@ -32,9 +32,50 @@ class Home extends Component {
                     </Carousel>
             </div>
             </div>
+            <div className="row techlist" >
+             <div className="container-fluid">
+              <Grid>
+                <Row>
+                    <Col xs={6} md={4}>
+                    <Thumbnail src={require('../../img/python.jpg')} alt="242x200">
+                        <h3>Thumbnail label</h3>
+                        <p>Description</p>
+                        <p>
+                        <Button bsStyle="primary">Button</Button>
+                        &nbsp;
+                        <Button bsStyle="default">Button</Button>
+                        </p>
+                    </Thumbnail>
+                    </Col>
+                    <Col xs={6} md={4}>
+                    <Thumbnail src={require('../../img/go.png')} alt="242x200">
+                        <h3>Thumbnail label</h3>
+                        <p>Description</p>
+                        <p>
+                        <Button bsStyle="primary">Button</Button>
+                        &nbsp;
+                        <Button bsStyle="default">Button</Button>
+                        </p>
+                    </Thumbnail>
+                    </Col>
+                    <Col xs={6} md={4}>
+                    <Thumbnail src={require('../../img/php.jpg')} alt="242x200">
+                        <h3>Thumbnail label</h3>
+                        <p>Description</p>
+                        <p>
+                        <Button bsStyle="primary">Button</Button>
+                        &nbsp;
+                        <Button bsStyle="default">Button</Button>
+                        </p>
+                    </Thumbnail>
+                    </Col>
+                  </Row>
+                 </Grid>
+                </div>
+              </div>
             <div className="row">
             <div className="container-fluid">
-                <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                 <Tab eventKey={1} title="Python">
                 <Image width={200} height={200} src={require('../../img/img_9.jpg')} rounded />
                     <h4>Python Title</h4>
@@ -55,6 +96,7 @@ class Home extends Component {
                 </Tabs>
             </div>
         </div>
+        
         </div>
       );
     }

@@ -52,22 +52,21 @@ class Login extends Component {
 		  //mode: 'no-cors',
 			headers: { 'Accept': 'application/text' },
 			body: JSON.stringify({data})
-			}).then((response) => response.text())
+			}).then((response) => response.json())
 			.then((responseData) => { 
-        console.log("Response: " + responseData);
-        //alert('Response: ' + responseData);
-        const userData = responseData;
-        //const userResult= JSON.parse(userData);
-        console.log(userData);
-        //sessionStorage.setItem(userResult);
-        //localStorage.setItem( 'objectToPass', userResult );
+        sessionStorage.setItem('id', responseData.id);
+        sessionStorage.setItem('name', responseData.name);
+         sessionStorage.setItem('email', responseData.email);
+         sessionStorage.setItem('username', responseData.username);
+         sessionStorage.setItem('password', responseData.password);
+        
 
-        if(responseData==1){
+        if(responseData.id > 0){
           
           window.location  = "http://localhost:3000/welcome";
           
         }else{
-          alert('Response: ' + responseData);
+          alert(responseData.error);
         }
        })
       .catch((err) => { console.log(err); });
@@ -103,6 +102,9 @@ class Login extends Component {
             Login
           </Button>
           <p>Don't have an account? <Link to="Registration">Sign up now</Link>.</p>
+         
+            <a href="reset-password.php" class="btn btn-warning logoutbtn">Reset Your Password</a>
+                
         </form> 
 
     </div>
