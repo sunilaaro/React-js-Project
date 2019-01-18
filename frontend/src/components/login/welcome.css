@@ -8,4 +8,24 @@
 .sidebartab{
     background: #8bc34a73;
     padding: 10px;
+    height:463px;
+    margin-bottom:3px;
+}
+.mdl-cell {
+
+    margin: 8px;
+}
+.mdl-cell {
+
+    box-sizing: border-box;
+
+}
+.mdl-cell--3-col-desktop.mdl-cell--3-col-desktop {
+
+    width: calc(25% - 16px);
+}
+demo-chart:nth-child(1) {
+
+    color: #ACEC00;
+
 }

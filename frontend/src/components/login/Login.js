@@ -63,7 +63,7 @@ class Login extends Component {
 
         if(responseData.id > 0){
           
-          window.location  = "http://localhost:3000/welcome";
+          window.location  = "http://localhost:3000/dashboard";
           
         }else{
           alert(responseData.error);

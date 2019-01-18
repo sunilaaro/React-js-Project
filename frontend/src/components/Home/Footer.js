@@ -21,6 +21,7 @@ class Footer extends Component {
                     <p>Ut enim ad..</p>
                     </div>
                 </div>
+                <p>&copy; or & #169;</p>
             </div>
       );
     }

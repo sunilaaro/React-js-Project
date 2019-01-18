@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Registration from './components/login/Registration.js';
 import Login from './components/login/Login.js';
 import Welcome from './components/login/Welcome.js';
+import Dashboard from './components/login/Dashboard';
 import Services from './components/pages/Services';
 import Home from './components/Home/Home';
 import EditProfile from "./components/login/EditProfile.js";
@@ -49,6 +50,7 @@ class Routes extends React.Component {
               <Route path="/Registration" component={Registration} />
               <Route path="/Login" component={Login} />
               <Route path="/Welcome" component={Welcome} />
+              <Route path="/Dashboard" component={Dashboard} />
               <Route exact path="/"  component={Home} />
               <Route exact path="/EditProfile/:id"  component={EditProfile} />
               </Switch> 

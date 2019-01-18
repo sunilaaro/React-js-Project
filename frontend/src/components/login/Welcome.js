@@ -59,13 +59,35 @@ class Welcome extends Component{
                         <Row className="clearfix">
                         <Col sm={4} className="sidebartab">
                             <Nav bsStyle="pills" stacked>
-                                <NavItem eventKey="first">Profile</NavItem>
-                                <NavItem eventKey="second">Tech Tutorials</NavItem>
+                                <NavItem eventKey="first">Dashboard</NavItem>
+                                <NavItem eventKey="second">Profile</NavItem>
+                                <NavItem eventKey="third">Tech Tutorials</NavItem>
                             </Nav>
                         </Col>
                         <Col sm={8}>
                             <Tab.Content animation>
-                                <Tab.Pane eventKey="first">
+                            <Tab.Pane eventKey="first">
+                            <div className="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+                                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                                <use href="#piechart" mask="url(#piemask)" />
+                                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
+                                </svg>
+                                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                                <use href="#piechart" mask="url(#piemask)" />
+                                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                                </svg>
+                                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                                <use href="#piechart" mask="url(#piemask)" />
+                                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                                </svg>
+                                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                                <use href="#piechart" mask="url(#piemask)" />
+                                <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                                </svg>
+                            </div>    
+                                
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second">
                                  <Table striped bordered condensed hover>
                                     <thead>
                                         <tr>
@@ -90,7 +112,7 @@ class Welcome extends Component{
                                     </tbody>
                                 </Table>;
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">
+                            <Tab.Pane eventKey="third">
                                 <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                                 <Tab eventKey={1} title="Python">
                                 <Image width={200} height={200} src={require('../../img/img_9.jpg')} rounded />
