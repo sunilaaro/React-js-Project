@@ -7,6 +7,7 @@ import Dashboard from './components/login/Dashboard';
 import Services from './components/pages/Services';
 import Home from './components/Home/Home';
 import EditProfile from "./components/login/EditProfile.js";
+import UserTech from "./components/Tech/UserTech.js";
 
 
 class Routes extends React.Component {
@@ -52,7 +53,9 @@ class Routes extends React.Component {
               <Route path="/Welcome" component={Welcome} />
               <Route path="/Dashboard" component={Dashboard} />
               <Route exact path="/"  component={Home} />
+              <Route path="/UserTech" component={UserTech} />
               <Route exact path="/EditProfile/:id"  component={EditProfile} />
+              
               </Switch> 
             </div>
           </Router >

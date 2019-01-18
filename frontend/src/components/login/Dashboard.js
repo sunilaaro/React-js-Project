@@ -64,6 +64,7 @@ componentDidMount(){
                   </button>
                   <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
                     <li className="mdl-menu__item">About</li>
+                    <Link to={'/UserTech/'}>UserTech</Link>
                     <li className="mdl-menu__item">Contact</li>
                     <li className="mdl-menu__item">Legal information</li>
                   </ul>
